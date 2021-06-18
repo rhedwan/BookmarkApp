@@ -101,7 +101,7 @@ function fillBookmarksList(bookmarks = []) {
 
     bookmarksList.innerHTML = bookmarks.map((bookmark, i) =>{
         return `
-         <a href="${bookmark.link}" class="bookmark" data-id="${i}">
+         <a href="${bookmark.link}" class="bookmark" data-id="${i}" target="_blank" >
             <div class="img" style="background-image:url('${bookmark.image}')"></div>
             <div class="title">${bookmark.title}</div>
             <span class="glyphicon glyphicon-remove"></span>
